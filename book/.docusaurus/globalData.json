@@ -1,0 +1,133 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module1/basic_ai_concepts",
+              "path": "/docs/module1/basic_ai_concepts",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module1/embodied_intelligence",
+              "path": "/docs/module1/embodied_intelligence",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module1/introduction",
+              "path": "/docs/module1/introduction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module1/robot_hardware_overview",
+              "path": "/docs/module1/robot_hardware_overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module2/actuator_control",
+              "path": "/docs/module2/actuator_control",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module2/humanoid_design_principles",
+              "path": "/docs/module2/humanoid_design_principles",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module2/kinematics_dynamics",
+              "path": "/docs/module2/kinematics_dynamics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module2/locomotion_balance",
+              "path": "/docs/module2/locomotion_balance",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module3/decision_making_planning",
+              "path": "/docs/module3/decision_making_planning",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module3/human_robot_interaction",
+              "path": "/docs/module3/human_robot_interaction",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module3/robot_learning_paradigms",
+              "path": "/docs/module3/robot_learning_paradigms",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module3/social_ethical_implications",
+              "path": "/docs/module3/social_ethical_implications",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module4/emerging_trends",
+              "path": "/docs/module4/emerging_trends",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module4/future_challenges",
+              "path": "/docs/module4/future_challenges",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module4/real_world_applications",
+              "path": "/docs/module4/real_world_applications",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module4/societal_impact_ethics",
+              "path": "/docs/module4/societal_impact_ethics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/foundations",
+              "path": "/docs/category/foundations",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/robotics-engineering",
+              "path": "/docs/category/robotics-engineering",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/intelligence-learning",
+              "path": "/docs/category/intelligence-learning",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/applications-future",
+              "path": "/docs/category/applications-future",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

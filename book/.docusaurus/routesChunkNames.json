@@ -1,0 +1,170 @@
+{
+  "/__docusaurus/debug-5ff": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/config-5ba": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/content-a2b": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    },
+    "__props": "__props---docusaurus-debug-content-3-c-0-be2"
+  },
+  "/__docusaurus/debug/globalData-c3c": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/metadata-156": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/registry-88c": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/routes-000": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/login-a8c": {
+    "__comp": "__comp---site-src-pages-login-js-380-710",
+    "__context": {
+      "plugin": "plugin---logina-74-fc3"
+    },
+    "config": "config---login-5-e-9-d49"
+  },
+  "/profile-ef2": {
+    "__comp": "__comp---site-src-pages-profile-jsd-07-cca",
+    "__context": {
+      "plugin": "plugin---logina-74-fc3"
+    },
+    "config": "config---login-5-e-9-d49"
+  },
+  "/signup-e02": {
+    "__comp": "__comp---site-src-pages-signup-js-83-a-147",
+    "__context": {
+      "plugin": "plugin---logina-74-fc3"
+    },
+    "config": "config---login-5-e-9-d49"
+  },
+  "/docs-d10": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---docsaba-d7c"
+    }
+  },
+  "/docs-900": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---docs-005-788"
+  },
+  "/docs-0c9": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/category/applications-future-87c": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-applications-future-490-270"
+  },
+  "/docs/category/foundations-e2e": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-foundationsd-46-18c"
+  },
+  "/docs/category/intelligence-learning-6fd": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-intelligence-learningd-36-f19"
+  },
+  "/docs/category/robotics-engineering-3f9": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-robotics-engineeringe-51-55f"
+  },
+  "/docs/intro-89a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-introf-84-2b4"
+  },
+  "/docs/module1/basic_ai_concepts-b20": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-1-basic-ai-conceptse-05-09d"
+  },
+  "/docs/module1/embodied_intelligence-1a8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-1-embodied-intelligence-02-e-f5a"
+  },
+  "/docs/module1/introduction-d64": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-1-introductionef-8-7e8"
+  },
+  "/docs/module1/robot_hardware_overview-1d2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-1-robot-hardware-overview-08-c-907"
+  },
+  "/docs/module2/actuator_control-f5b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-2-actuator-control-52-f-34e"
+  },
+  "/docs/module2/humanoid_design_principles-3fa": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-2-humanoid-design-principles-6-ff-67f"
+  },
+  "/docs/module2/kinematics_dynamics-5b3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-2-kinematics-dynamicsa-45-24e"
+  },
+  "/docs/module2/locomotion_balance-4ca": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-2-locomotion-balance-039-0d2"
+  },
+  "/docs/module3/decision_making_planning-8d3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-3-decision-making-planning-732-38d"
+  },
+  "/docs/module3/human_robot_interaction-43a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-3-human-robot-interactionf-87-255"
+  },
+  "/docs/module3/robot_learning_paradigms-350": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-3-robot-learning-paradigmsef-4-750"
+  },
+  "/docs/module3/social_ethical_implications-918": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-3-social-ethical-implications-66-d-07c"
+  },
+  "/docs/module4/emerging_trends-0b0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-4-emerging-trends-374-14a"
+  },
+  "/docs/module4/future_challenges-516": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-4-future-challengesbed-8f9"
+  },
+  "/docs/module4/real_world_applications-22d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-4-real-world-applicationsb-3-d-afb"
+  },
+  "/docs/module4/societal_impact_ethics-dc9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-4-societal-impact-ethicsa-0-e-a4f"
+  },
+  "/-2e1": {
+    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
+    "__context": {
+      "plugin": "plugin---logina-74-fc3"
+    },
+    "config": "config---login-5-e-9-d49"
+  }
+}
