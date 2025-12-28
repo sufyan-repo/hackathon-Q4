@@ -1,13 +1,29 @@
 import { createAuthClient } from 'better-auth/client';
 
-export const authClient = createAuthClient({
-  url: "http://localhost:3000",
-  secret: "3NmSGusfaN5HUGI0EhCA8pV2tyqrYeOL", // In a real app, this might be a public key or handled differently client-side
-});
+// Initialize auth client only on the client-side
+let authClient = null;
+
+// Function to safely initialize the auth client
+const getAuthClient = () => {
+  if (typeof window !== 'undefined' && authClient === null) {
+    // Client-side: use the current origin
+    const baseUrl = window.location.origin;
+    authClient = createAuthClient({
+      url: baseUrl,
+      secret: "3NmSGusfaN5HUGI0EhCA8pV2tyqrYeOL", // In a real app, this might be a public key or handled differently client-side
+    });
+  }
+  return authClient;
+};
 
 export const signup = async (email, password, username, skill_level) => {
   try {
-    const response = await authClient.signUp.email({
+    const client = getAuthClient();
+    if (!client) {
+      throw new Error('Auth client not available during build time');
+    }
+
+    const response = await client.signUp.email({
       email,
       password,
       name: username,
@@ -27,7 +43,12 @@ export const signup = async (email, password, username, skill_level) => {
 
 export const login = async (email, password) => {
   try {
-    const response = await authClient.signIn.email({
+    const client = getAuthClient();
+    if (!client) {
+      throw new Error('Auth client not available during build time');
+    }
+
+    const response = await client.signIn.email({
       email,
       password,
     });
@@ -47,7 +68,12 @@ export const login = async (email, password) => {
 
 export const getUserProfile = async () => {
   try {
-    const session = await authClient.getSession();
+    const client = getAuthClient();
+    if (!client) {
+      return null; // Return null during build time
+    }
+
+    const session = await client.getSession();
     if (session?.data?.user) {
       const user = session.data.user;
       // Merge custom fields from localStorage
@@ -65,6 +91,11 @@ export const getUserProfile = async () => {
 
 export const updateProfile = async (updates) => {
   try {
+    const client = getAuthClient();
+    if (!client) {
+      throw new Error('Auth client not available during build time');
+    }
+
     // Update custom fields in localStorage
     if (updates.username) {
       localStorage.setItem('user_username', updates.username);
@@ -75,18 +106,18 @@ export const updateProfile = async (updates) => {
     if (updates.preferred_language) {
       localStorage.setItem('user_preferred_language', updates.preferred_language);
     }
-    
+
     // Update BetterAuth user if name is being updated
     if (updates.username) {
       try {
-        await authClient.user.update({ name: updates.username });
+        await client.user.update({ name: updates.username });
       } catch (err) {
         console.warn('Could not update user name in BetterAuth:', err);
       }
     }
-    
+
     // Get updated session
-    const session = await authClient.getSession();
+    const session = await client.getSession();
     const user = session?.data?.user;
     if (user) {
       user.username = localStorage.getItem('user_username') || user.name || user.email;
@@ -103,7 +134,13 @@ export const updateProfile = async (updates) => {
 
 export const logout = async () => {
   try {
-    await authClient.signOut();
+    const client = getAuthClient();
+    if (!client) {
+      console.log('Logout successful (no auth client during build time)');
+      return;
+    }
+
+    await client.signOut();
     // Clear custom fields from localStorage
     localStorage.removeItem('user_username');
     localStorage.removeItem('user_skill_level');
